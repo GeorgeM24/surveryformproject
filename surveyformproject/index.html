@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1 id="title">GSM Survey Form</h1>
+<p id="description">1st project, personal skillset survey critique</p>
+<form id="survey-form">
+    <fieldset>
+    <label for="name" id="name-label">Name </label> 
+    <br>
+    <input type="text" name="name" id="name" placeholder="Enter your name" required> 
+    <br>
+    <label for="email" id="email-label">Email</label> 
+    <br>
+    <input type="email" name="email" id="email" placeholder="Enter your Email" required> 
+    <br>
+    <label for="number" id="number-label">Age</label>
+    <br>
+    <input type="number" name="age" id="number" placeholder="Age" min="10" max="100" required>
+    <br>
+    <label for="dropdown">What is your occupation? 
+        <br>
+        <select name="occupation" id="dropdown">
+            <option value="holder">(Choose your role)</option>
+            <option value="part-time">Part-time Student</option>
+            <option value="full-time">Full-time Student</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="employed">Employed</option>
+        </select>
+    </label>
+</fieldset>
+    <fieldset>
+    <label id="survey-1">Do you like my first project? <br>
+        <!-- <input type="radio" name="" id="like">
+        <label for="">Yes you did great!</label>
+        -->
+        <input type="radio" name="survey-q1" id="like" value="like" >
+        <label for="like">Yes you did great!</label> <br>
+        <input type="radio" name="survey-q1" id="dislike" value="dislike">
+        <label for="dislike"> Ehhh..needs more work</label>
+    </label>
+
+</fieldset>
+<fieldset>
+   <label for="feature">
+        What is your favorite feature on the survey? <br>
+        <select name="feature" id="feature">
+            <option value="holder">(Choose a feature)</option>
+            <option value="color">Color</option>
+            <option value="layout">Layout</option>
+            <option value="style">Style</option>
+        </select>
+    </label> 
+</fieldset>
+<fieldset>
+    <label for="checkbox"> What would you like to see improved? (Check all that apply)
+        <br>
+        <input type="checkbox" name="checkbox1" id="checkbox1" value="Color Choice" >Color Choice <br>
+        <input type="checkbox" name="" id="checkbox2" value="Layout">Layout <br>
+        <input type="checkbox" name="" id="checkbox3" value="Functionality" >Functionality <br>
+        <input type="checkbox" name="" id="checkbox4" value="Font Choice" >Font Choice 
+    </label>
+</fieldset>
+
+<label id="comments">Any comments or suggestions?
+   <br> 
+</label>
+
+<textarea name="" id="" cols="60" rows="5"></textarea>
+ <br>
+ <button id="submit">Submit</button>
+    
+</form>
+<body>
+    
+</body>
+</html>
